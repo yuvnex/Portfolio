@@ -66,6 +66,17 @@
     display: block;
   }
 }
+@media only screen and (max-width: 480px) {
+  .navbar-head {
+    padding: 15px 0;
+  }
+  
+  .nav-links {
+    gap: 20px;
+    font-size: 13px;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .header {
     padding: 35px 0px;

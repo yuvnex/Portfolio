@@ -42,6 +42,25 @@
   left: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .landing-circle1 {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .landing-section {
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .landing-circle1 {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 @keyframes loadingCircle {
   0% {
     transform: translate(-95%, -75%) rotateZ(0deg);

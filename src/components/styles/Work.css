@@ -49,9 +49,12 @@
 
 .carousel-content {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 50px;
   width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .carousel-info {
@@ -59,6 +62,8 @@
   display: flex;
   gap: 30px;
   align-items: flex-start;
+  justify-content: center;
+  max-width: 100%;
 }
 
 .carousel-number h3 {
@@ -108,10 +113,89 @@
 }
 
 .carousel-image-wrapper {
-  flex: 1;
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
+  min-width: 0;
+}
+
+/* ── Mobile Responsive ── */
+@media only screen and (max-width: 768px) {
+  .work-section {
+    padding: 50px 0;
+  }
+  
+  .work-section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .carousel-slide {
+    padding: 30px 0;
+  }
+  
+  .carousel-content {
+    gap: 30px;
+  }
+  
+  .carousel-info {
+    gap: 15px;
+    max-width: 100%;
+  }
+  
+  .carousel-number h3 {
+    font-size: 40px;
+  }
+  
+  .carousel-details h4 {
+    font-size: 20px;
+  }
+  
+  .carousel-category {
+    font-size: 14px;
+  }
+  
+  .carousel-arrow-left,
+  .carousel-arrow-right {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  
+  .carousel-arrow-left {
+    left: 10px;
+  }
+  
+  .carousel-arrow-right {
+    right: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .work-section h2 {
+    font-size: 28px;
+  }
+  
+  .carousel-number h3 {
+    font-size: 32px;
+  }
+  
+  .carousel-details h4 {
+    font-size: 18px;
+  }
+  
+  .carousel-category {
+    font-size: 12px;
+  }
+  
+  .carousel-tools .tools-label {
+    font-size: 12px;
+  }
+  
+  .carousel-tools p {
+    font-size: 13px;
+  }
 }
 
 /* ── Navigation Arrows ── */
@@ -262,28 +346,42 @@
   }
 
   .carousel-arrow-left {
-    left: 10px;
+    left: 20px;
   }
 
   .carousel-arrow-right {
-    right: 10px;
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .carousel-content {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .carousel-info {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .carousel-image-wrapper {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+  
+  .project-component-wrapper {
+    transform: scale(1) !important; /* Reset scale for visibility in vertical stack */
+    max-width: 100% !important;
   }
 }
 
 @media only screen and (max-width: 1025px) {
-  .carousel-content {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .carousel-info {
-    width: 100%;
-  }
-
-  .carousel-image-wrapper {
-    width: 100%;
-  }
-
   .carousel-arrow {
     width: 40px;
     height: 40px;

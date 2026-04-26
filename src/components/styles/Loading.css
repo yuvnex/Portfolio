@@ -411,3 +411,18 @@
     font-size: 18px;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .loading-marquee {
+    font-size: 24px;
+  }
+  
+  .loading-dot {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .loader-title {
+    font-size: 14px;
+  }
+}

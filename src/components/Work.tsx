@@ -5,34 +5,20 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Solid Starters",
-    category: "Low-Code Platform",
-    tools: "Angular, Next.js, NestJS, MongoDB",
-    image: "/images/Solidx.png",
+    title: "Recursion Visualizer",
+    category: "Visualize Recursive Execution",
+    tools: "HTML, CSS, React",
+    image: "/images/recursion_visualizer.png",
+    githubLink: "https://github.com/yuvnex/Recursion_Visualizer",
+    liveLink: "https://recursion-visualizer-iota.vercel.app/",
   },
   {
-    title: "Radix",
-    category: "E-Commerce",
-    tools: "Angular, Next.js, NestJS, CMS",
-    image: "/images/radix.png",
-  },
-  {
-    title: "Bond Cancellation",
-    category: "Import-Export Automation",
-    tools: "Angular, Next.js, NestJS, Workflows",
-    image: "/images/bond.png",
-  },
-  {
-    title: "Sapphire",
-    category: "CRM Platform",
-    tools: "AngularJS, NestJS, PostgreSQL",
-    image: "/images/sapphire.png",
-  },
-  {
-    title: "Mpro",
-    category: "Insurance Platform",
-    tools: "React.js, Node.js, Microservices",
-    image: "/images/Maxlife.png",
+    title: "InfoThiranAI",
+    category: "AI-Powered Research Assistant",
+    tools: "HTML, CSS, React, Spring Boot",
+    image: "/images/infothiran_ai.png",
+    githubLink: "https://github.com/yuvnex/InfoThiranAI",
+    liveLink: "none",
   },
 ];
 
@@ -112,10 +98,18 @@ const Work = () => {
                           <span className="tools-label">Tools & Features</span>
                           <p>{project.tools}</p>
                         </div>
+                        <div className="carousel-links" style={{ display: 'flex', gap: '15px', marginTop: '15px' }}>
+                           {project.githubLink && project.githubLink !== "none" && (
+                             <a href={project.githubLink} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accentColor)', textDecoration: 'none', borderBottom: '1px solid var(--accentColor)' }}>GitHub Repo</a>
+                           )}
+                           {project.liveLink && project.liveLink !== "none" && (
+                             <a href={project.liveLink} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accentColor)', textDecoration: 'none', borderBottom: '1px solid var(--accentColor)' }}>Live Project</a>
+                           )}
+                        </div>
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
-                      <WorkImage image={project.image} alt={project.title} />
+                      <WorkImage image={project.image} alt={project.title} link={project.liveLink} />
                     </div>
                   </div>
                 </div>

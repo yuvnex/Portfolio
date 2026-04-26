@@ -91,6 +91,42 @@ a.contact-social {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .contact-section {
+    padding: 50px 0;
+  }
+  
+  .contact-section h2 {
+    font-size: 40px;
+  }
+  
+  .contact-box {
+    padding: 30px 20px;
+  }
+  
+  .contact-box h2 {
+    font-size: 24px;
+  }
+  
+  .contact-box h5 {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contact-section h2 {
+    font-size: 28px;
+  }
+  
+  .contact-box h2 {
+    font-size: 18px;
+  }
+  
+  .contact-links {
+    gap: 15px;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .contact-flex {
     flex-direction: column;

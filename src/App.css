@@ -17,12 +17,25 @@
 }
 @media only screen and (max-width: 1400px) {
   .section-container {
-    width: 900px;
+    width: 95%;
+    max-width: 1100px;
   }
 }
 @media only screen and (max-width: 900px) {
   .section-container {
     width: 500px;
     max-width: var(--cWidth);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .section-container {
+    width: 90vw;
+    max-width: calc(100% - 40px);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .section-container {
+    width: 95vw;
+    max-width: calc(100% - 20px);
   }
 }
