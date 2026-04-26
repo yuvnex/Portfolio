@@ -11,7 +11,10 @@ This is a highly interactive, performance-driven web experience built to showcas
 - **Immersive 3D Experience**: Integrated a custom 3D avatar using **Three.js** and **React Three Fiber**.
 - **Interactive Fluid Animations**: Smooth, scroll-triggered animations powered by **GSAP** (GreenSock Animation Platform) and its ScrollTrigger plugin.
 - **Modern UI/UX**: Sleek dark mode design, custom glassmorphism components, and dynamic typography.
-- **Project Showcases**: Distinct sections with beautifully designed UI mockups (e.g. InfoThiran AI & expected layouts).
+- **Project Showcases & Mockups**: Beautifully designed UI layouts showcasing my top projects:
+  - **InfoThiran AI**: AI-Powered Research Assistant.
+  - **Recursion Visualizer**: Tool to Visualize Recursive Execution.
+  - **AI Email Assistant**: Featuring automated Gmail & Google Calendar integration.
 - **Fully Responsive**: Optimizations made across mobile, tablet, and ultra-wide displays.
 
 ## 🛠️ Tech Stack
